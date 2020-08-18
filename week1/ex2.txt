@@ -1,0 +1,7 @@
+    1  rm ex2.txt
+    2  pwd
+    3  whoami
+    4  man
+    5  man man
+    6  ls -la
+    7  history > ex2.txt
