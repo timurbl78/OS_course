@@ -16,8 +16,6 @@ int main() {
     for (i = 0; i < n; i++) {
         pthread_create(&threads[i], NULL, threadFunction, (void *)&i);
         printf("Thread #%d created\n", i);
-        pthread_join(threads[i], NULL);
-        printf("Thread #%d exit\n", i);
     }
 
     pthread_exit(NULL);

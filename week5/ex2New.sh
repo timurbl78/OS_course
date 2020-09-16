@@ -14,3 +14,4 @@ fi
 
 # modified with lock-file
 # critical region - access to the same file
+# here we run our code only then where is no lock file
