@@ -1,0 +1,1 @@
+ex2 appears in running processes and allocates more memory every second, then the ex2 stops
