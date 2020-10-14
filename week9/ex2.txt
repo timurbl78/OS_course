@@ -1,0 +1,6 @@
+These two sequences show the maximum and minimum hit/miss ratio respectively
+1) 1 1 1 1 1 1 1 1 1 1 1 ...
+2) 1 2 3 4 5 6 7 8 9 10 11 12 ...
+
+So, we can see that in order to increase the hit/miss ratio, we need a smaller set of different numbers,
+and in order to reduce the hit/miss ratio, we need a larger set of different numbers
