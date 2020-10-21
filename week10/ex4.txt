@@ -1,0 +1,2 @@
+Inode: 2254759
+link1 file1

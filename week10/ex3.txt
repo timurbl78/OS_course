@@ -1,0 +1,27 @@
+1) Remove execute permission for everybody
+$ chmod 666  _ex3.txt
+$ ls -l _ex3.txt
+-rw-rw-rw- 1 timurbl timurbl 0 окт 21 18:03 _ex3.txt
+
+2) Grant all permissions to owner and others (not group)
+$ chmod 707  _ex3.txt
+$ ls -l _ex3.txt
+-rwx---rwx 1 timurbl timurbl 0 окт 21 18:03 _ex3.txt
+
+3) Make group permissions equal to user permissions
+$ chmod g=u _ex3.txt
+$ ls -l _ex3.txt
+-rwxrwxrwx 1 timurbl timurbl 0 окт 21 18:03 _ex3.txt
+
+What does 660 mean for ex3.txt?
+-rw-rw----
+The owner, group can read file and write to it
+
+What does 775 mean for ex3.txt?
+-rwxrwxr-x
+The owner, group have all permissions
+The other user can only read and execute it
+
+What does 777 mean for ex3.txt?
+-rwxrwxrwx
+The owner, group, and other users have all permissions
