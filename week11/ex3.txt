@@ -1,0 +1,5 @@
+The first program prints "Hello" 2 times, the second-1 time
+
+This is due to a special feature of the buffer
+When "Hello\n" is output, the buffer becomes empty (due to \n, stdout has line buffering),
+so the second program does not output "Hello" twice
