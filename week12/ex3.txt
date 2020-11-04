@@ -1,0 +1,40 @@
+
+gcc -DBUF_SIZE=20 -o copy copy.c
+real    0m0,003s
+user    0m0,003s
+sys     0m0,000s
+
+
+gcc -DBUF_SIZE=100 -o copy copy.c
+real    0m0,003s
+user    0m0,001s
+sys     0m0,002s
+
+
+gcc -DBUF_SIZE=1000 -o copy copy.c
+real    0m0,001s
+user    0m0,001s
+sys     0m0,000s
+
+
+gcc -DBUF_SIZE=1000 -DSYNC=1 -o copy copy.c
+real    0m0,003s
+user    0m0,002s
+sys     0m0,001s
+
+gcc -DBUF_SIZE=100 -DSYNC=1 -o copy copy.c
+real    0m0,001s
+user    0m0,001s
+sys     0m0,000s
+
+gcc -DBUF_SIZE=20 -DSYNC=1 -o copy copy.c
+real    0m0,003s
+user    0m0,002s
+sys     0m0,001s
+
+
+Conclusions:
+
+Bigger buffer - less time
+Bigger file - more time
+O_SYNC flag - more time
