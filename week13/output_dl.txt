@@ -1,0 +1,4 @@
+Process P1 is deadlocked
+Process P2 is deadlocked
+Process P3 is deadlocked
+Process P4 is deadlocked
